@@ -1,22 +1,420 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- fonts and icons -->
+    <script src="https://kit.fontawesome.com/24229bc4ce.js" crossorigin="anonymous" SameSite="None"></script>
+
+    <title>Harsh Patel</title>
+</head>
+
+<body id="page-top" data-spy="scroll" data-target="#main-nav-bar" data-offset="50">
+    <div class="container-fluid">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav-bar">
+            <a class="navbar-brand" href="#page-top ">Harsh Patel</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavItems" aria-controls="mainNavItems" aria-expanded="false " aria-label="Toggle navigation ">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavItems">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./files/harsh_patel_resume.pdf " download="harsh_patel_resume_.pdf">
+                            <button class="btn btn-outline-info">Resume</button>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <header>
+        <div class="headerImageAndTextDiv ">
+            <div class="container">
+                <div class="intro-text ">
+                    <span class="greetings">Hi, my name is</span>
+                    <span class="name ">Harsh Patel</span>
+                    <span class="aboutMeHeader ">I'm a software engineer, who is passionate about technology and entrepreneurship.</span>
+                    <p class="initialIntroText ">
+                        I'm based in the Chicago area; Currently a fullstack engineer at <a href="https://cvshealth.com/">CVS Health</a>, and a graduate student studying Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a> focusing on
+                        AI and Machine Learning.
+                    </p>
+                    <div class="headerConnectIcons ">
+                        <a href="https://www.github.com/patelharsh94 " class="fab fa-2x fa-github gitIcon "></a>
+                        <a href="https://www.linkedin.com/in/harshpatel94 " class="fab fa-2x fa-linkedin linkedInIcon "></a>
+                        <div class="headerConnectBtn ">
+                            <a href="mailto:patelharsh94@gmail.com ">
+                                <button type="button " class="btn btn-outline-info "><i class="far fa-envelope "></i> Connect</button>
+                            </a>
+                        </div>
+                        <div class="headerConnectBtn ">
+                            <a href="./files/harsh_patel_resume.pdf " download="harsh_patel_resume.pdf ">
+                                <button type="button " class="btn btn-outline-info"><i class="fas fa-download "></i> Resume</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="about" class="container-fluid dataSection">
+            <h1>About</h1>
+            <div class="aboutMeContainer">
+                <p>My name is Harsh Patel, and I'm a software engineer based out of <a href="https://en.wikipedia.org/wiki/Chicago">Chicago</a>. I'm currently working at <a href="https://cvshealth.com/">CVS Health</a> as a full stack engineer. Working on
+                    web applications that use HTML, CSS, Angular, Java/Kotlin, Spring Boot and SQL. Before that I spent a year working as a data engineer as a data engineer at <a href="https://www.outcomehealth.com/">Outcome Health</a>. I graduated Maga
+                    Cum Laude with a bachelor's degree in Computer Science from <a href="https://www.uic.edu/">The University of Illinois at Chicago (UIC)</a>. I'm currently a graduate student at <a href="https://www.gatech.edu/">Georgia Tech</a> studying
+                    Computer Science and specializing in Machine Learning and Artificial Intelligence.
+                </p>
+                <img class="aboutMePic" src="./img/croatia_pic.jpg">
+            </div>
+        </div>
+        <div id="experience" class="container-fluid dataSection">
+            <h1>Experience</h1>
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <div class="nav nav-pills mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-cvsHealth-tabContent" data-toggle="pill" href="#v-cvs-data" role="tab" aria-controls="v-pills-home" aria-selected="true">CVS Health</a>
+                            <a class="nav-link" id="v-pills-messages-tabContent" data-toggle="pill" href="#v-ff-data" role="tab" aria-controls="v-pills-messages" aria-selected="false">Food Fight</a>
+                            <a class="nav-link" id="v-pills-profile-tabContent" data-toggle="pill" href="#v-oh-data" role="tab" aria-controls="v-pills-profile" aria-selected="false">Outcome Health</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content" id="experience-data">
+                            <div class="tab-pane fade show active" id="v-cvs-data" role="tabpanel" aria-labelledby="cvs-health-data">
+                                <h1>Software Engineer Advisor (Full Stack) at <a href="https://cvshealth.com/">CVS Health</a></h1>
+                                <h5>​September 2018 – Present</h5>
+                                <ul>
+                                    <li>Writing clean, maintainable and tested code on a Java, SQL, Angular stack; We practice test driven development.</li>
+                                    <li>Working on an XP team, developing, prototyping and iterating on the app many times.</li>
+                                    <li>Working in a pair programming environment, communicating ideas clearly to BPMs, POs, and other engineers.</li>
+                                    <li>Working with Spring framework to develop APIs for the app.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-ff-data" role="tabpanel" aria-labelledby="food-fight-data">
+                                <h1>Founder and CEO at <a href="https://getfoodfight.com/">Food Fight</a></h1>
+                                <h5>August 2018 - December 2019</h5>
+                                <ul>
+                                    <li>Graduated from the Founder’s Institute Idea Stage Startup Accelerator.</li>
+                                    <li>Cold called, networked and connected with hundreds of people to clearly define my idea.</li>
+                                    <li>Pitched the ideas in different formats to many investors and entrepreneurs that were mentoring in the Founder’s Institute program.</li>
+                                    <li>Working on team building, marketing and growing the company.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="v-oh-data" role="tabpanel" aria-labelledby="outcome-health-data">
+                                <h1>Software Engineer - Data at <a href="https://www.outcomehealth.com/">Outcome Health</a></h1>
+                                <h5>​March 2017 – June 2018</h5>
+                                <ul>
+                                    <li>Was the single point of contact for the daily ETL based data loads and the ETL process at OH. Managed, improved, and maintained the ETL system end to end (From gathering requirements, to coding, to creating efficient
+                                        tables in Redshift, to deploying code to ECS).</li>
+                                    <li>Worked on an enterprise wide project to consolidate all of our asset information; wrote python code to clean, transform large amounts asset data collected in different forms since the company’s conception. The project
+                                        is a huge added value to the company's bottom line and also to the company’s supply chain management process.</li>
+                                    <li>Created ETL tasks from scratch using Python while leveraging AWS S3, Redshift, EC2 and Docker.</li>
+                                    <li>Improved the efficiency of the ETL system by 40% (what used to finish running by 8 am or later, now runs by 5 am). I also worked to reduce failure rates of the ETL.</li>
+                                    <li>Effectively trained other engineers to work on the ETL and DW.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="container-fluid dataSection">
+            <h1>Skills</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <p>
+                            <h3 class="progressTitles">Languages</h3>
+                        </p>
+                        <!-- making skill progress bars -->
+                        <div class="progress">
+                            <div id="java" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">Java</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="python" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                            <span class="progress-type">Python</span>
+                            <span class="progress-completed">70%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="sql" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                            <span class="progress-type">SQL</span>
+                            <span class="progress-completed">70%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="android" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                <span class="sr-only">60% Complete</span>
+                            </div>
+                            <span class="progress-type">Android Dev</span>
+                            <span class="progress-completed">60%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="cpp" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                <span class="sr-only">50% Complete</span>
+                            </div>
+                            <span class="progress-type">C++</span>
+                            <span class="progress-completed">50%</span>
+                        </div>
+                        <p>
+                            <h3 class="progressTitles">Frameworks</h3>
+                        </p>
+                        <div class="progress">
+                            <div id="spring" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                <span class="sr-only">80% Complete</span>
+                            </div>
+                            <span class="progress-type">Spring</span>
+                            <span class="progress-completed">80%</span>
+                        </div>
+                        <p>
+                            <h3 class="progressTitles">Version Control</h3>
+                        </p>
+                        <div class="progress">
+                            <div id="git" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                <span class="sr-only">80% Complete</span>
+                            </div>
+                            <span class="progress-type">Git</span>
+                            <span class="progress-completed">80%</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-lg-offset-2">
+                        <p>
+                            <h3 class="progressTitles">Web Design</h3>
+                        </p>
+                        <div class="progress">
+                            <div id="html" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">HTML 5</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="css" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
+                                <span class="sr-only">85% Complete</span>
+                            </div>
+                            <span class="progress-type">CSS 3</span>
+                            <span class="progress-completed">85%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="javascript" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%">
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type">JavaScript</span>
+                            <span class="progress-completed">75%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="typescript" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
+                                <span class="sr-only">75% Complete</span>
+                            </div>
+                            <span class="progress-type">TypeScript</span>
+                            <span class="progress-completed">75%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="angular" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                                <span class="sr-only">70% Complete</span>
+                            </div>
+                            <span class="progress-type">Angular</span>
+                            <span class="progress-completed">70%</span>
+                        </div>
+                        <p>
+                            <h3 class="progressTitles">Methodologies</h3>
+                        </p>
+                        <div class="progress">
+                            <div id="agile" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">Agile / Scrum</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="tdd" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">Test Driven Development (TDD)</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                        <div class="progress">
+                            <div id="xp" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
+                                <span class="sr-only">90% Complete</span>
+                            </div>
+                            <span class="progress-type">Extreme (XP) Programming</span>
+                            <span class="progress-completed">90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="education" class="container-fluid dataSection">
+            <h1>Education</h1>
+            <div class="row">
+                <div class="column">
+                    <div>
+                        <div class="nav nav-pills mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <a class="nav-link active" id="v-georgia-tech-tab" data-toggle="pill" href="#v-gt-data" role="tab" aria-selected="true">Georgia Tech</a>
+                            <a class="nav-link" id="v-fi-tech-tab" data-toggle="pill" href="#v-fi-data" role="tab" aria-selected="false">Founder's Institute</a>
+                            <a class="nav-link" id="v-uic-tech-tab" data-toggle="pill" href="#v-uic-data" role="tab" aria-selected="false">UIC</a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="tab-content" id="experience-data">
+                            <div class="tab-pane fade show active" id="v-gt-data" role="tabpanel" aria-labelledby="georgia-tech-data">
+                                <h1>Master's In Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a></h1>
+                                <h3>Focusing on Machine Learning and Artificial Intelligence</h3>
+                                <h5>​2020 - Present</h5>
+
+                            </div>
+                            <div class="tab-pane fade" id="v-fi-data" role="tabpanel" aria-labelledby="founders-institute-data">
+                                <h1>Graduated as a "Founder" from <a href="https://fi.co/">Founder's Institute (FI)</a></h1>
+                                <h3>Focused on Entrepreneurship</h3>
+                                <h5>​2018</h5>
+                                <p>
+                                    Founder's Institute is an idea stage accelerator. At FI I learned about taking an idea from idea to startup. I pitched the idea for my company <a href="https://getfoodfight.com/">Food Fight</a> to dozens of investors
+                                    and entrepreneurs in the Chicago land area, and learned how to effectively pitch an idea. I also learned about marketing, law and sales; everything it takes for you to get started with a new idea.
+                                </p>
+                            </div>
+                            <div class="tab-pane fade" id="v-uic-data" role="tabpanel" aria-labelledby="uic-data">
+                                <h1>Bachelor's In Computer Science From <a href="https://www.uic.edu/">University of Illinois at Chicago (UIC)</a></h1>
+                                <h3>Magna Cum Laude / Honors College</h3>
+                                <h5>​2014 - 2016</h5>
+                                <h5 style="color: darksalmon;">GPA: 3.75</h5>
+                                <h6>Courses: </h6>
+                                <p>Data Structures, Algorithms, Mobile App Development, Machine Organization, Automata, Object Oriented Programming and Computer System Secutiry.
+                                </p>
+                                <h6>Activities: </h6>
+                                <p>UIC Engineering Design Team, UIC Honors College</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="projects" class="container-fluid dataSection">
+            <h1>Projects</h1>
+            <div class="row">
+                <div class="col card-col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual Standup</h5>
+                            <h6 class="card-subtitle mb-2">Dart / Flutter / Android</h6>
+                            <p class="card-text">Building a way for my team to track work and have standups virtually</p>
+                            <a href="https://github.com/patelharsh94/Virtual-Standup" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Leet Code Problems</h5>
+                            <h6 class="card-subtitle mb-2">Java</h6>
+                            <p class="card-text">Having fun and becoming a better programmer by doing leet code problems</p>
+                            <a href="https://github.com/patelharsh94/LeetCodeProblems" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">F# Image Manipulator</h5>
+                            <h6 class="card-subtitle mb-2">C# / F#</h6>
+                            <p class="card-text">Doing basic imagin manipulation in F#</p>
+                            <a href="https://github.com/patelharsh94/F-Image-Manipulator" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col card-col">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Android Nano Degree Apps</h5>
+                            <h6 class="card-subtitle mb-2">Java / Android</h6>
+                            <p class="card-text">Some apps I built when I was working on Udacity's Android nano degree</p>
+                            <a href="https://github.com/patelharsh94/AndroidND" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Robotics Nano Degree Projects</h5>
+                            <h6 class="card-subtitle">C++ / Python</h6>
+                            <p class="card-text">Some projects I made when I was working on Udacity's Robotics Nano Degree</p>
+                            <a href="https://github.com/patelharsh94/RoboticsNd" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">More Projects</h5>
+                            <h6 class="card-subtitle mb-2"> Polyglot </h6>
+                            <p class="card-text">Im always working on new projects, click on the github link and see more of my project! </p>
+                            <a href="https://github.com/patelharsh94" class="fab fa-2x fa-github gitIcon "></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+
+            <div class="footer-connect">
+                <a href="https://www.github.com/patelharsh94 " class="fab fa-2x fa-github gitIcon "></a>
+                <a href="https://www.linkedin.com/in/harshpatel94 " class="fab fa-2x fa-linkedin linkedInIcon "></a>
+                <div class="headerConnectBtn ">
+                    <a href="mailto:patelharsh94@gmail.com ">
+                        <i class="far fa-envelope fa-2x"></i>
+                    </a>
+                </div>
+                <div class="headerConnectBtn ">
+                    <a href="./files/harsh_patel_resume.pdf " download="harsh_patel_resume.pdf ">
+                        <button type="button " class="btn btn-outline-info"><i class="fas fa-download "></i> Resume</button>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-text">
+                <span>Created By Harsh Patel</span>
+                <span>Copyright 2020, patelharsh.com</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
 </html>
