@@ -261,6 +261,18 @@
         margin-top: 8px;
     }
     
+    @media (max-width: 1200px) {
+        .progress>.progress-type {
+            font-family: 'Roboto Mono', monospace;
+            position: absolute;
+            left: 0px;
+            font-weight: 250;
+            font-size: small;
+            padding: 3px 30px 2px 10px;
+            margin-top: 8px;
+        }
+    }
+    
     .progress>.progress-completed {
         font-family: 'Roboto Mono', monospace;
         position: absolute;
