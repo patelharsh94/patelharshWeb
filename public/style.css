@@ -298,6 +298,10 @@
         margin: 1%;
     }
     
+    .card-body {
+        display: grid;
+    }
+    
     .card-subtitle {
         font-family: 'Roboto Mono', monospace;
         color: #11a88a;
