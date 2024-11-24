@@ -339,3 +339,9 @@
         padding-bottom: 5%;
         justify-content: center;
     }
+
+    .tech-stack {
+        color: #18BC9C;
+        font-size: small;
+        margin-bottom: 3%;
+    }
