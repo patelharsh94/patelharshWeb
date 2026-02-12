@@ -1,457 +1,634 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Patel | Full Stack Engineer | AI Engineer </title>
+    <meta name="description" content="Full Stack Software Engineer with 8 years of experience specializing in scalable web applications, AI, and cloud technologies.">
+    
+    <!-- Tailwind CSS via CDN (optimized for performance) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162787540-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-162787540-1');
     </script>
-
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hi, my name is Harsh Patel, I'm a full stack software engineer who is interested in technology and entrepreneurship." <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-
-    <!-- fonts and icons -->
-    <script src="https://kit.fontawesome.com/24229bc4ce.js" crossorigin="anonymous" SameSite="None"></script>
-
-    <title>Harsh Patel | Full Stack | Software Engineer</title>
+    
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        
+        .hover-up {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-up:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-
-<body id="page-top" data-spy="scroll" data-target="#main-nav-bar" data-offset="50">
-    <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark" id="main-nav-bar">
-            <a class="navbar-brand" href="#page-top ">Harsh Patel</a>
-
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavItems" aria-controls="mainNavItems" aria-expanded="false " aria-label="Toggle navigation ">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="mainNavItems">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://drive.google.com/file/d/12srgztj0PsRwVH6vZiY5zyJDr45CwHeE/view?usp=sharing">
-                            <button class="btn btn-outline-info">Resume</button>
-                        </a>
-                    </li>
-                </ul>
+<body class="bg-gradient-to-br from-slate-50 to-slate-100 text-slate-800 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="fixed top-0 right-0 left-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="#home" class="text-2xl font-bold gradient-text hover:opacity-80 transition">HP</a>
+                
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="text-slate-600 hover:text-slate-900 transition">About</a>
+                    <a href="#experience" class="text-slate-600 hover:text-slate-900 transition">Experience</a>
+                    <a href="#skills" class="text-slate-600 hover:text-slate-900 transition">Skills</a>
+                    <a href="#projects" class="text-slate-600 hover:text-slate-900 transition">Projects</a>
+                    <a href="#contact" class="text-slate-600 hover:text-slate-900 transition">Contact</a>
+                </div>
+                
+                <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden p-2">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
             </div>
-        </nav>
-    </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <div class="px-4 py-4 space-y-3">
+                <a href="#about" class="block text-slate-600 hover:text-slate-900">About</a>
+                <a href="#experience" class="block text-slate-600 hover:text-slate-900">Experience</a>
+                <a href="#skills" class="block text-slate-600 hover:text-slate-900">Skills</a>
+                <a href="#projects" class="block text-slate-600 hover:text-slate-900">Projects</a>
+                <a href="#contact" class="block text-slate-600 hover:text-slate-900">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-    <header>
-        <div class="headerImageAndTextDiv ">
-            <div class="container">
-                <div class="intro-text ">
-                    <span class="greetings">Hi, my name is</span>
-                    <span class="name ">Harsh Patel</span>
-                    <span class="aboutMeHeader ">An experienced full stack software engineer, with an interest in AI and ML.</span>
-                    <p class="initialIntroText ">
-                        I'm based in the Chicago area and currently a fullstack engineer on <a href="https://capitalone.com/cars">Capital One's</a> AutoNavigator team.  I am also a graduate from The Georgia Institute of Technology, where I earned a <a href="https://www.parchment.com/u/award/6b70e9233faec8feaeffe7503ae69b52">Masters in Computer Science</a> with a specialization in Machine Learning.
+    <!-- Hero Section -->
+    <section id="home" class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto w-full">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <h1 class="text-5xl md:text-6xl font-bold text-slate-900">
+                        Hi, I'm <span class="gradient-text">Harsh Patel</span>
+                    </h1>
+                    <p class="text-xl text-slate-600">
+                        Full Stack Engineer with 8 years of experience building scalable web applications, intelligent systems, and cloud solutions.
                     </p>
-                    <div class="headerConnectIcons ">
-                        <a href="https://www.github.com/patelharsh94 " class="fab fa-2x fa-github gitIcon "></a>
-                        <a href="https://www.linkedin.com/in/harshpatel94 " class="fab fa-2x fa-linkedin linkedInIcon "></a>
-                        <div class="headerConnectBtn ">
-                            <a href="mailto:patelharsh94@gmail.com ">
-                                <button type="button " class="btn btn-outline-info "><i class="far fa-envelope "></i> Connect</button>
-                            </a>
+                    <p class="text-lg text-slate-600">
+                        I specialize in modern full-stack development, AI/ML integration, and distributed systems. Currently at Capital One, driving innovation in web technologies.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="#contact" class="px-8 py-3 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:shadow-lg transform hover:-translate-y-1 transition">
+                            Get In Touch
+                        </a>
+                        <a href="https://drive.google.com/file/d/1agaxouxwCPi87qKm1c7OKVouPqL24nKD/view?usp=sharing" target="_blank" class="px-8 py-3 border-2 border-purple-600 text-purple-600 rounded-lg hover:bg-purple-50 transition">
+                            Download Resume
+                        </a>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="flex gap-6 pt-6">
+                        <a href="https://github.com/patelharsh94" target="_blank" class="text-slate-600 hover:text-purple-600 text-2xl transition">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/harshpatel94" target="_blank" class="text-slate-600 hover:text-blue-600 text-2xl transition">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:patelharsh94@gmail.com" class="text-slate-600 hover:text-red-600 text-2xl transition">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hidden md:block">
+                    <div class="w-80 h-80 mx-auto bg-gradient-to-br from-purple-400 to-pink-400 rounded-3xl shadow-2xl flex items-center justify-center">
+                        <div class="text-white text-6xl font-bold">Web & AI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900">About Me</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="md:col-span-2 space-y-6">
+                    <p class="text-lg text-slate-600">
+                        I'm a driven Full Stack Engineer with a passion for building innovative solutions that solve real-world problems. With 8 years of experience, I've successfully delivered organization-wide projects at leading companies like Capital One and CVS Health.
+                    </p>
+                    <p class="text-lg text-slate-600">
+                        My expertise spans the entire technology stack—from backend microservices built using Java Spring and Python's FastAPI framework to modern frontend frameworks like React and NextJS. I hold a Master's degree in Computer Science from Georgia Tech (focused on AI/ML) and an AWS Solutions Architect certification.
+                    </p>
+                    <p class="text-lg text-slate-600">
+                        I'm particularly passionate about:
+                    </p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-purple-600"></i> Building scalable web applications and microservices using Java, Python & Typescript Frameworks.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-purple-600"></i> AI/ML integration and intelligent systems using Vercel AI SDK, Python and NextJS.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-purple-600"></i> Cloud-native architectures using cloud tools from AWS.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-purple-600"></i> Full-stack development with modern frameworks such as NextJS.</li>
+                        <li class="flex items-center gap-3"><i class="fas fa-check text-purple-600"></i> Startup innovation and entrepreneurship.</li>
+                    </ul>
+                </div>
+                
+                <div class="glass-effect p-8 rounded-2xl h-fit">
+                    <h3 class="text-xl font-bold mb-6 text-slate-900">Quick Stats</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-3xl font-bold gradient-text">8+</p>
+                            <p class="text-slate-600">Years Experience</p>
                         </div>
-                        <div class="headerConnectBtn ">
-                            <a href="https://drive.google.com/file/d/12srgztj0PsRwVH6vZiY5zyJDr45CwHeE/view?usp=sharing">
-                                <button type="button " class="btn btn-outline-info"><i class="fas fa-download "></i> Resume</button>
-                            </a>
+                        <div>
+                            <p class="text-3xl font-bold gradient-text">10+</p>
+                            <p class="text-slate-600">Projects Shipped</p>
+                        </div>
+                        <div>
+                            <p class="text-3xl font-bold gradient-text">2</p>
+                            <p class="text-slate-600">Companies (Fortune 500)</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <div class="container">
-        <div id="about" class="container-fluid dataSection">
-            <h1>About</h1>
-            <div class="aboutMeContainer">
-                <p> I'm a full stack software engineer based out of <a href="https://en.wikipedia.org/wiki/Chicago">Chicago</a>.  I have over 7 years of experience as a software engineer
-                 with a deep passion for building great products.  My experience includes leading feature development at Capital One AutoNavigator, and working as a full stack engineer at CVS Health.
-                 Most of my Full Stack experience includes working on a Java, Angular and AWS stack.  I also have worked professionally in Python at Capital One where I worked on the Card Tech team and also at Outcome Health 
-                 where I worked as a Data Engineer.  Apart form professional work, I also have a lot of python experience from Georgia Tech where I worked on interesting projects such as building trading bots and building Open CV projects to create panoramic images.
-                 My experience with full stack engineering, and machine learning, make me a perfect candidate for any team looking to build innovative projects for the future!
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900">Work Experience</h2>
+            
+            <div class="space-y-8">
+                <!-- Capital One - Full Stack -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Senior Associate Software Engineer</h3>
+                            <p class="text-purple-600 font-semibold">Capital One - Full Stack + Back End</p>
+                        </div>
+                        <span class="text-slate-600 whitespace-nowrap">May 2020 - Present</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">Tech Stack: Java, AWS, Angular, Spring Framework, SQL, Jenkins, Git, Github Co-Pilot, REST APIs</p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Spearheaded implementation of an "auto-fill" feature, significantly reducing signup times by 50%-80% and increasing
+conversion by 10%.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Built a portal using Lit element to allow agents to share inventory across dealers and run dealer feeds saving automating
+something that took countless developer hours every sprint.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Created AB tests for diverse landing page designs, resulting in a more interactive and user-friendly experience.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Led the integration of Medallia, a 3rd party survey software, into the Autonavigator website, enhancing customer
+feedback mechanisms.</span></li>
+<li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Supported the integration of Sacks 5th Ave into Capital One’s Credit Card platform by utilizing lambdas, python and
+other AWS tools.</span></li>
+<li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Provided critical production support, actively resolving system issues to maintain operational integrity</span></li>
+                    </ul>
+                </div>
+
+                <!-- CVS Health -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Software Engineering Advisor</h3>
+                            <p class="text-purple-600 font-semibold">CVS Health - Full Stack</p>
+                        </div>
+                        <span class="text-slate-600 whitespace-nowrap">Sep 2018 - May 2020</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">Tech Stack: Java, PCF, Angular, Spring Framework, SQL, Jenkins, Test Driven Development</p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Developed full-stack drug pricing application that reduced pricing time by 90%.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Transformed manual email/paper-based process into fully auditable application with intuitive UI, improving
+efficiency and transparency.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Practiced Test-Driven Development (TDD) using Java, PCF, Angular, Spring Framework, and SQL for robust solution
+delivery.</span></li>
+                    </ul>
+                </div>
+
+                <!-- Food Fight -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Founder</h3>
+                            <p class="text-purple-600 font-semibold">Food Fight, Inc</p>
+                        </div>
+                        <span class="text-slate-600 whitespace-nowrap">Aug 2018 - Dec 2019</span>
+                    </div>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Founded B2B company addressing food waste by connecting local farmers to food processing businesses.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Participated in Founder's Institute accelerator program, pitching to Chicago VCs</span></li>
+                    </ul>
+                </div>
+
+                <!-- Outcome Health -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-slate-900">Data Engineer</h3>
+                            <p class="text-purple-600 font-semibold">Outcome Health</p>
+                        </div>
+                        <span class="text-slate-600 whitespace-nowrap">March 2017 - Aug 2018</span>
+                    </div>
+                    <p class="text-slate-600 mb-4">Tech Stack: Python, AWS (Redshift, EC2)</p>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Led data cleaning project using Python and AWS to track millions in company assets.</span></li>
+                        <li class="flex gap-3"><span class="text-purple-600 mt-1">•</span> <span>Enabled critical financial audits and saved company hundreds of thousands through improved data accuracy.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900">Skills & Technologies</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Full Stack -->
+                <div class="hover-up p-6 bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><i class="fas fa-code text-purple-600 mr-2"></i>Full Stack & Backend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Java</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Spring Framework</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Python</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">REST APIs</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Fast APIs</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">PostgreSQL</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Firebase</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Supabase</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-purple-200">Vercel</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="hover-up p-6 bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><i class="fas fa-paint-brush text-blue-600 mr-2"></i>Frontend</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">Next.js</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">React</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">Angular</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">TypeScript</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">Lit Element</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-blue-200">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div class="hover-up p-6 bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><i class="fas fa-cloud text-orange-600 mr-2"></i>Cloud & DevOps</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-orange-200">AWS (S3, EC2, Lambda, SNS, ECS, Redshift)</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-orange-200">PCF</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-orange-200">Jenkins</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-orange-200">Docker</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-orange-200">Git</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="hover-up p-6 bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4"><i class="fas fa-brain text-green-600 mr-2"></i>AI/ML & Data Science</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">PyTorch</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">Scikit-learn</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">Deep Learning</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">Reinforcement Learning</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">OpenAI API</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">LangChain</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">CNN/RNN</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">Pandas</span>
+                        <span class="px-3 py-1 bg-white rounded-full text-sm text-slate-700 border border-green-200">Vercel AI SDK</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900">Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- InsightArc -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i class="fas fa-brain text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">InsightArc</h3>
+                        <p class="text-slate-600 text-sm mb-4">Deep research agent powered by AI that researches topics and creates detailed reports automatically.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">Next.js</span>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">OpenAI</span>
+                            <span class="text-xs bg-purple-100 text-purple-700 px-2 py-1 rounded">React</span>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <a href="https://github.com/patelharsh94/InsightArc" target="_blank" class="text-purple-600 hover:text-purple-800 font-semibold text-sm">
+                                View on GitHub <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <a href="https://insight-arc-delta.vercel.app/" class="text-purple-600 hover:text-purple-800 font-semibold text-sm">
+                            Try it out! <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nano GPT -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center">
+                        <i class="fas fa-microchip text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Nano GPT</h3>
+                        <p class="text-slate-600 text-sm mb-4">ChatGPT clone trained on Shakespeare's writings with custom transformer architecture implementation.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Transformers</span>
+                            <span class="text-xs bg-blue-100 text-blue-700 px-2 py-1 rounded">Python</span>
+                        </div>
+                        <a href="https://github.com/patelharsh94/HP-Nano-GPT" class="text-blue-600 hover:text-blue-800 font-semibold text-sm">
+                           View on GitHub <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ML Trading -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-green-500 to-emerald-500 flex items-center justify-center">
+                        <i class="fas fa-chart-line text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Q-Learning Stock Trader</h3>
+                        <p class="text-slate-600 text-sm mb-4">Stock trading bot using reinforcement learning with Q-Learning and Dyna-Q algorithms for portfolio optimization.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Reinforcement Learning</span>
+                            <span class="text-xs bg-green-100 text-green-700 px-2 py-1 rounded">Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Front End Framework -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-orange-500 to-red-500 flex items-center justify-center">
+                        <i class="fas fa-cubes text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Front End Framework</h3>
+                        <p class="text-slate-600 text-sm mb-4">Custom framework from scratch with VDOM, change detection, events, templates, and state management.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">JavaScript</span>
+                            <span class="text-xs bg-orange-100 text-orange-700 px-2 py-1 rounded">Architecture</span>
+                        </div>
+                        <a href="https://github.com/patelharsh94/create-frontend-framework" class="text-orange-600 hover:text-orange-800 font-semibold text-sm">
+                            View on Github <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                <!-- CNN Deep Learning -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-pink-500 to-rose-500 flex items-center justify-center">
+                        <i class="fas fa-image text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">CNN Deep Learning</h3>
+                        <p class="text-slate-600 text-sm mb-4">Custom CNN implementations from scratch with experimentation on layer sizes, optimization, and activation functions.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded">PyTorch</span>
+                            <span class="text-xs bg-rose-100 text-rose-700 px-2 py-1 rounded">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Websurf Agent -->
+                <div class="hover-up glass-effect rounded-2xl overflow-hidden">
+                    <div class="h-40 bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
+                        <i class="fas fa-globe text-white text-5xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Websurf Agent</h3>
+                        <p class="text-slate-600 text-sm mb-4">Intelligent web scraping agent using LLMs to extract requested data from websites automatically.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">OpenAI API</span>
+                            <span class="text-xs bg-indigo-100 text-indigo-700 px-2 py-1 rounded">Web Scraping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900">Education & Certifications</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Georgia Tech -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                            GT
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900">Georgia Institute of Technology</h3>
+                            <p class="text-purple-600 font-semibold">Master of Science in Computer Science</p>
+                            <p class="text-slate-600 text-sm mt-1">Focus: AI and Machine Learning</p>
+                            <p class="text-slate-500 text-sm mt-2">2020 - 2023</p>
+                            <p class="text-slate-600 text-sm mt-3">Relevant Coursework: Deep Learning, Reinforcement Learning, Machine Learning, AI for Trading, AI for Education, Computational Photography, Algorithms</p>
+                            <a href="https://www.parchment.com/u/award/6b70e9233faec8feaeffe7503ae69b52" target="_blank" class="text-purple-600 hover:text-purple-800 font-semibold text-sm">
+                            View Credentials <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UIC -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                            UIC
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900">University of Illinois at Chicago</h3>
+                            <p class="text-blue-600 font-semibold">Bachelor of Science in Computer Science</p>
+                            <p class="text-slate-600 text-sm mt-1">Graduated Magna Cum Laude</p>
+                            <p class="text-slate-500 text-sm mt-2">2014 - 2016</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AWS Certification -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-yellow-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                            AWS
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900">AWS Certified Solutions Architect</h3>
+                            <p class="text-orange-600 font-semibold">Associate Level</p>
+                            <p class="text-slate-500 text-sm mt-2">Certified 2025 - 2028</p>
+                            <a href="https://www.credly.com/badges/0d169515-b1aa-420e-b974-61f31a5214e3/linked_in_profile" target="_blank" class="text-orange-600 hover:text-orange-800 font-semibold text-sm">
+                            View Credentials <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Founder's Institute -->
+                <div class="hover-up glass-effect p-8 rounded-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-white text-xl font-bold">
+                            FI
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-xl font-bold text-slate-900">Founder's Institute</h3>
+                            <p class="text-green-600 font-semibold">Startup Accelerator Program</p>
+                            <p class="text-slate-500 text-sm mt-2">2018</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12 text-slate-900 text-center">Let's Work Together</h2>
+            
+            <div class="glass-effect p-12 rounded-3xl">
+                <p class="text-lg text-slate-600 text-center mb-8">
+                    I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
                 </p>
-                <img class="aboutMePic" src="./img/croatia_pic_2.jpg">
-            </div>
-        </div>
-        <div id="experience" class="container-fluid dataSection">
-            <h1>Experience</h1>
-            <div class="row">
-                <div class="column">
-                    <div>
-                        <div class="nav nav-pills mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-pills-messages-tabContent" data-toggle="pill" href="#v-cap-1-AN" role="tab" aria-controls="v-pills-home" aria-selected="true">Capital One (AutoNavigator)</a>
-                            <a class="nav-link" id="v-pills-messages-tabContent" data-toggle="pill" href="#v-cap-1-CT" role="tab" aria-controls="v-pills-home" aria-selected="true">Capital One (Card Tech)</a>
-                            <a class="nav-link" id="v-pills-messages-tabContent" data-toggle="pill" href="#v-cvs-data" role="tab" aria-controls="v-pills-home" aria-selected="true">CVS Health</a>
-                            <a class="nav-link" id="v-pills-messages-tabContent" data-toggle="pill" href="#v-ff-data" role="tab" aria-controls="v-pills-messages" aria-selected="false">Food Fight</a>
-                            <a class="nav-link" id="v-pills-profile-tabContent" data-toggle="pill" href="#v-oh-data" role="tab" aria-controls="v-pills-profile" aria-selected="false">Outcome Health</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tab-content" id="experience-data">
-                            <div class="tab-pane fade show active" id="v-cap-1-AN" role="tabpanel" aria-labelledby="cvs-health-data">
-                                <h1>Software Engineer (Full Stack) at <a href="https://capitalone.com/cars">Capital One Auto Navigator</a></h1>
-                                <div class="tech-stack"><i>Java, AWS S3, Angular, Spring Framework, SQL, Jenkins, Git, Github Co-Pilot, REST APIs.</i></div>
-                                <h5>Jan 2021 – Present</h5>
-                                <ul>
-                                    <li>Implemented and led feature development on the capitalone.com/cars website AKA AutoNavigator.</li>
-                                    <li>Led feature development on an “auto-fill” feature which resulted in the reduction of signup times by 50%.</li>
-                                    <li>Led development on AB testing of different landing page designs leading to a more interactive landing page.</li>
-                                    <li>Led the integration of the 3rd party survey software Medallia into the Autonavigator website.</li>
-                                </ul>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <!-- Contact Methods -->
+                    <div class="space-y-6">
+                        <a href="mailto:patelharsh94@gmail.com" class="flex items-center gap-4 p-4 bg-gradient-to-r from-red-50 to-pink-50 rounded-xl hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-red-500 to-pink-500 rounded-lg flex items-center justify-center text-white text-xl">
+                                <i class="fas fa-envelope"></i>
                             </div>
-                            <div class="tab-pane fade show" id="v-cap-1-CT" role="tabpanel" aria-labelledby="cvs-health-data">
-                                <h1>Software Engineer (Backend) at <a href="https://capitalone.com/cars">Capital One Card Tech</a></h1>
-                                <div class="tech-stack"><i>Python, AWS, EC2, S3, Lambda, SNS, REST APIs.</i></div>
-                                <h5>May 2020 – Jan 2021</h5>
-                                <ul>
-                                    <li>Worked on the integration of Saks 5th avenue into Capital One’s credit card network.</li>
-                                    <li>Participated in production support and helped resolve many issues.</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade show" id="v-cvs-data" role="tabpanel" aria-labelledby="cvs-health-data">
-                                <h1>Software Engineer Advisor (Full Stack) at <a href="https://cvshealth.com/">CVS Health</a></h1>
-                                <div class="tech-stack"><i>Java, PCF, Angular, Spring Framework, SQL, Jenkins, Git, REST APIs, Test Driven Development.</i></div>
-                                <h5>​September 2018 – May 2020</h5>
-                                <ul>
-                                    <li>Writing clean, maintainable and tested code on a Java, SQL, Angular stack; We practice test driven development.</li>
-                                    <li>Working on an XP team, developing, prototyping and iterating on the app many times.</li>
-                                    <li>Working in a pair programming environment, communicating ideas clearly to the business project manager (BPM) and project manager (PM), POs, and other engineers.</li>
-                                    <li>Working with Spring framework to develop APIs for the app.</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="v-ff-data" role="tabpanel" aria-labelledby="food-fight-data">
-                                <h1>Founder and CEO at <a href="https://getfoodfight.com/">Food Fight</a></h1>
-                                <h5>August 2018 - December 2019</h5>
-                                <ul>
-                                    <li>Graduated from the Founder’s Institute Idea Stage Startup Accelerator.</li>
-                                    <li>Cold called, networked and connected with hundreds of people to clearly define my idea.</li>
-                                    <li>Pitched the ideas in different formats to many investors and entrepreneurs that were mentoring in the Founder’s Institute program.</li>
-                                    <li>Working on team building, marketing and growing the company.</li>
-                                </ul>
-                            </div>
-                            <div class="tab-pane fade" id="v-oh-data" role="tabpanel" aria-labelledby="outcome-health-data">
-                                <h1>Software Engineer - Data at <a href="https://www.outcomehealth.com/">Outcome Health</a></h1>
-                                <div class="tech-stack"><i>Python, AWS, Redshift, EC2.</i></div>
-                                <h5>​March 2017 – June 2018</h5>
-                                <ul>
-                                    <li>Was the single point of contact for the daily ETL based data loads and the ETL process at OH. Managed, improved, and maintained the ETL system end to end (From gathering requirements, to coding, to creating efficient
-                                        tables in Redshift, to deploying code to ECS).</li>
-                                    <li>Worked on an enterprise wide project to consolidate all of our asset information; wrote python code to clean, transform large amounts asset data collected in different forms since the company’s conception. The project
-                                        is a huge added value to the company's bottom line and also to the company’s supply chain management process.</li>
-                                    <li>Created ETL tasks from scratch using Python while leveraging AWS S3, Redshift, EC2 and Docker.</li>
-                                    <li>Improved the efficiency of the ETL system by 40% (what used to finish running by 8 am or later, now runs by 5 am). I also worked to reduce failure rates of the ETL.</li>
-                                    <li>Effectively trained other engineers to work on the ETL and DW.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="skills" class="container-fluid dataSection">
-            <h1>Skills</h1>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>
-                            <h3 class="progressTitles">Languages</h3>
-                        </p>
-                        <!-- making skill progress bars -->
-                        <div class="progress">
-                            <div id="java" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                <span class="sr-only">80% Complete</span>
-                            </div>
-                            <span class="progress-type">Java</span>
-                            <span class="progress-completed">80%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="python" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                <span class="sr-only">70% Complete</span>
-                            </div>
-                            <span class="progress-type">Python</span>
-                            <span class="progress-completed">70%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="sql" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                <span class="sr-only">70% Complete</span>
-                            </div>
-                            <span class="progress-type">SQL</span>
-                            <span class="progress-completed">70%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="android" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                <span class="sr-only">60% Complete</span>
-                            </div>
-                            <span class="progress-type">Android Dev</span>
-                            <span class="progress-completed">60%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="cpp" class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                <span class="sr-only">50% Complete</span>
-                            </div>
-                            <span class="progress-type">C++</span>
-                            <span class="progress-completed">50%</span>
-                        </div>
-                        <p>
-                            <h3 class="progressTitles">Frameworks</h3>
-                        </p>
-                        <div class="progress">
-                            <div id="spring" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                <span class="sr-only">80% Complete</span>
-                            </div>
-                            <span class="progress-type">Spring</span>
-                            <span class="progress-completed">80%</span>
-                        </div>
-                        <p>
-                            <h3 class="progressTitles">Version Control</h3>
-                        </p>
-                        <div class="progress">
-                            <div id="git" class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                <span class="sr-only">80% Complete</span>
-                            </div>
-                            <span class="progress-type">Git</span>
-                            <span class="progress-completed">80%</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-lg-offset-2">
-                        <p>
-                            <h3 class="progressTitles">Web Design</h3>
-                        </p>
-                        <div class="progress">
-                            <div id="html" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-                                <span class="sr-only">90% Complete</span>
-                            </div>
-                            <span class="progress-type">HTML 5</span>
-                            <span class="progress-completed">90%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="css" class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;">
-                                <span class="sr-only">85% Complete</span>
-                            </div>
-                            <span class="progress-type">CSS 3</span>
-                            <span class="progress-completed">85%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="javascript" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
-                                <span class="sr-only">75% Complete</span>
-                            </div>
-                            <span class="progress-type">JavaScript</span>
-                            <span class="progress-completed">75%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="typescript" class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width:75%;">
-                                <span class="sr-only">75% Complete</span>
-                            </div>
-                            <span class="progress-type">TypeScript</span>
-                            <span class="progress-completed">75%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="angular" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%;">
-                                <span class="sr-only">70% Complete</span>
-                            </div>
-                            <span class="progress-type">Angular</span>
-                            <span class="progress-completed">70%</span>
-                        </div>
-                        <p>
-                            <h3 class="progressTitles">Methodologies</h3>
-                        </p>
-                        <div class="progress">
-                            <div id="agile" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                                <span class="sr-only">90% Complete</span>
-                            </div>
-                            <span class="progress-type">Agile / Scrum</span>
-                            <span class="progress-completed">90%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="tdd" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                                <span class="sr-only">90% Complete</span>
-                            </div>
-                            <span class="progress-type">Test Driven Development (TDD)</span>
-                            <span class="progress-completed">90%</span>
-                        </div>
-                        <div class="progress">
-                            <div id="xp" class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%;">
-                                <span class="sr-only">90% Complete</span>
-                            </div>
-                            <span class="progress-type">Extreme (XP) Programming</span>
-                            <span class="progress-completed">90%</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="education" class="container-fluid dataSection">
-            <h1>Education</h1>
-            <div class="row">
-                <div class="column">
-                    <div>
-                        <div class="nav nav-pills mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                            <a class="nav-link active" id="v-georgia-tech-tab" data-toggle="pill" href="#v-gt-data" role="tab" aria-selected="true">Georgia Tech</a>
-                            <a class="nav-link" id="v-fi-tech-tab" data-toggle="pill" href="#v-fi-data" role="tab" aria-selected="false">Founder's Institute</a>
-                            <a class="nav-link" id="v-uic-tech-tab" data-toggle="pill" href="#v-uic-data" role="tab" aria-selected="false">UIC</a>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="tab-content" id="experience-data">
-                            <div class="tab-pane fade show active" id="v-gt-data" role="tabpanel" aria-labelledby="georgia-tech-data">
-                                <h1>Master's In Computer Science at <a href="https://www.gatech.edu/">Georgia Tech</a></h1>
-                                <h3>Focusing on Machine Learning and Artificial Intelligence</h3>
-                                <h5>​2020 - 2023</h5>
-
-                            </div>
-                            <div class="tab-pane fade" id="v-fi-data" role="tabpanel" aria-labelledby="founders-institute-data">
-                                <h1>Graduated as a "Founder" from <a href="https://fi.co/">Founder's Institute (FI)</a></h1>
-                                <h3>Focused on Entrepreneurship</h3>
-                                <h5>​2018</h5>
-                                <p>
-                                    Founder's Institute is an idea stage accelerator. At FI I learned about taking an idea from idea to startup. I pitched the idea for my company <a href="https://getfoodfight.com/">Food Fight</a> to dozens of investors
-                                    and entrepreneurs in the Chicago land area, and learned how to effectively pitch an idea. I also learned about marketing, law and sales; everything it takes for you to get started with a new idea.
-                                </p>
-                            </div>
-                            <div class="tab-pane fade" id="v-uic-data" role="tabpanel" aria-labelledby="uic-data">
-                                <h1>Bachelor's In Computer Science From <a href="https://www.uic.edu/">University of Illinois at Chicago (UIC)</a></h1>
-                                <h3>Magna Cum Laude / Honors College</h3>
-                                <h5>​2014 - 2016</h5>
-                                <h5 style="color: darksalmon;">GPA: 3.75</h5>
-                                <h6>Courses: </h6>
-                                <p>Data Structures, Algorithms, Mobile App Development, Machine Organization, Automata, Object Oriented Programming and Computer System Security.
-                                </p>
-                                <h6>Activities: </h6>
-                                <p>UIC Engineering Design Team, UIC Honors College</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="projects" class="container-fluid dataSection">
-            <h1>Projects</h1>
-            <div class="row">
-                <div class="col card-col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Virtual Standup</h5>
-                            <h6 class="card-subtitle mb-2">Dart / Flutter / Android</h6>
-                            <p class="card-text">Building a way for my team to track work and have a "stand-up" meeting virtually</p>
-                            <a href="https://github.com/patelharsh94/Virtual-Standup" class="fab fa-2x fa-github gitIcon "></a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">patelharsh.com</h5>
-                            <h6 class="card-subtitle mb-2">HTML5 / CSS3 / Bootstrap</h6>
-                            <p class="card-text">Code for this website! </p>
-                            <a href="https://github.com/patelharsh94/patelharshWeb" class="fab fa-2x fa-github gitIcon "></a>
-                        </div>
-                    </div>
-
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Minecraft for Type 1 Diabetes</h5>
-                            <h6 class="card-subtitle mb-2">Java Script</h6>
-                            <p class="card-text">Using Minecraft to teach children how to manage their Type 1 Diabetes.</p>
                             <div>
-                                <a href="https://www.linkedin.com/pulse/using-minecraft-teach-children-type-1-diabetes-harsh-patel/?trackingId=X6Rzsm3bTEuRFdF%2BKMqGnA%3D%3D" class="fab fa-2x fa-linkedin linkedInIcon"></a>
+                                <p class="font-semibold text-slate-900">Email</p>
+                                <p class="text-slate-600">patelharsh94@gmail.com</p>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        </a>
 
-            <div class="row">
-                <div class="col card-col">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Android Nano Degree Apps</h5>
-                            <h6 class="card-subtitle mb-2">Java / Android</h6>
-                            <p class="card-text">Some apps I built when I was working on Udacity's Android nano degree</p>
-                            <a href="https://github.com/patelharsh94/AndroidND" class="fab fa-2x fa-github gitIcon "></a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">Robotics Nano Degree Projects</h5>
-                            <h6 class="card-subtitle">C++ / Python</h6>
-                            <p class="card-text">Some projects I made when I was working on Udacity's Robotics Nano Degree</p>
-                            <a href="https://github.com/patelharsh94/RoboticsNd" class="fab fa-2x fa-github gitIcon "></a>
-                        </div>
+                        <a href="https://linkedin.com/in/harshpatel94" target="_blank" class="flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-lg flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">LinkedIn</p>
+                                <p class="text-slate-600">harshpatel94</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/patelharsh94" target="_blank" class="flex items-center gap-4 p-4 bg-gradient-to-r from-slate-50 to-gray-50 rounded-xl hover:shadow-lg transition">
+                            <div class="w-12 h-12 bg-gradient-to-br from-slate-700 to-gray-900 rounded-lg flex items-center justify-center text-white text-xl">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold text-slate-900">GitHub</p>
+                                <p class="text-slate-600">patelharsh94</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <h5 class="card-title">More Projects</h5>
-                            <h6 class="card-subtitle mb-2"> Polyglot </h6>
-                            <p class="card-text">Im always working on new projects, click on the github link and see more of my project! </p>
-                            <a href="https://github.com/patelharsh94" class="fab fa-2x fa-github gitIcon "></a>
+                    <!-- Resume Download -->
+                    <div class="flex flex-col justify-center items-center gap-6">
+                        <div class="text-center">
+                            <p class="text-slate-600 mb-6">Download my detailed resume to learn more about my experience and qualifications!</p>
+                            <a href="https://drive.google.com/file/d/1agaxouxwCPi87qKm1c7OKVouPqL24nKD/view?usp=sharing" target="_blank" class="inline-block px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white rounded-lg hover:shadow-xl transform hover:-translate-y-1 transition font-semibold">
+                                <i class="fas fa-download mr-2"></i> Download Resume
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <footer>
-        <div class="container">
-
-            <div class="footer-connect">
-                <a href="https://www.github.com/patelharsh94 " class="fab fa-2x fa-github gitIcon "></a>
-                <a href="https://www.linkedin.com/in/harshpatel94 " class="fab fa-2x fa-linkedin linkedInIcon "></a>
-                <div class="headerConnectBtn ">
-                    <a href="mailto:patelharsh94@gmail.com ">
-                        <i class="far fa-envelope fa-2x"></i>
-                    </a>
-                </div>
-                <div class="headerConnectBtn ">
-                    <a href="https://drive.google.com/file/d/12srgztj0PsRwVH6vZiY5zyJDr45CwHeE/view?usp=sharing">
-                        <button type="button " class="btn btn-outline-info"><i class="fas fa-download "></i> Resume</button>
-                    </a>
-                </div>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto text-center">
+            <div class="flex justify-center gap-6 mb-6">
+                <a href="https://github.com/patelharsh94" target="_blank" class="hover:text-purple-400 transition">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com/in/harshpatel94" target="_blank" class="hover:text-blue-400 transition">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="mailto:patelharsh94@gmail.com" class="hover:text-red-400 transition">
+                    <i class="fas fa-envelope text-2xl"></i>
+                </a>
             </div>
-            <div class="footer-text">
-                <span>Created By Harsh Patel</span>
-                <span>Copyright 2024, patelharsh.com</span>
-            </div>
+            <p class="text-slate-400">Built with Next-Gen Web Technologies | © 2026 Harsh Patel. All rights reserved.</p>
         </div>
     </footer>
-</body>
 
+    <script>
+        // Smooth scroll behavior for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Fade in elements on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+            observer.observe(section);
+        });
+    </script>
+</body>
 </html>
